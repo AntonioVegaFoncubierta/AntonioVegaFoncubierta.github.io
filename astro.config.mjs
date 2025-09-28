@@ -6,8 +6,9 @@ import siteConfig from './src/data/site-config';
 
 // https://astro.build/config
 export default defineConfig({
-    site: siteConfig.website,
-    vite: {
+    site: 'https://AntonioVegaFoncubierta.github.io',
+  base: '/',
+    vite: {  
         plugins: [tailwindcss()]
     },
     integrations: [mdx(), sitemap()]
